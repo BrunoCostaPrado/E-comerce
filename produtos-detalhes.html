@@ -4,420 +4,457 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://img.icons8.com/fluency/48/000000/shopping-cart.png">
-    <meta name="author " content="Bruno Costa Prado e " />
-    <meta name="description" content="Ecommerce feito com HTML5, CSS3 e JavaScript"/>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/fluency/48/000000/shopping-cart.png"
+    />
+    <meta name="author " content="Bruno Costa Prado e Guilherme Oliveira " />
+    <meta
+      name="description"
+      content="Ecommerce feito com HTML5, CSS3 e JavaScript"
+    />
     <meta name="keywords" content="Ecommerce" />
     <meta http-equiv="refresh " content="60 " />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
+
     <title>Ecommerce</title>
   </head>
   <body>
     <header>
-      
-      <div class="mobile-menu bg-second">
-          <a href="#" class="mb-logo">ecommerce</a>
-          <span class="mb-menu-toggle" id="mb-menu-toggle">
-              <i class='bx bx-menu'></i>
+      <div class="mobile-menu bg">
+        <a
+          href="#"
+          class=""
+          >Ecommerce</a
+        >
+        <span class="mb-menu-alt" id="mb-menu alt">
+          <i class="bx bx-menu"></i>
+        </span>
+        <div class="header-wrap" id="header-wrap">
+          <span class="mb-menu-alt" id="mb-menu alt">
+            <i class="bx bx-x"></i>
           </span>
+          <div class="bg-segundo">
+            <div class="top-header docker">
+              <ul class="dividido">
+                <li><a href="#">+551140028922</a></li>
+                <li><a href="#">ecommerce@ecommerce.com</a></li>
+              </ul>
+              <ul class="dividido">
+                <li class="drop">
+                  <a href="">BR</a>
+                  <i class="bx bxs-chevron down"></i>
+                  <ul class="drop-content">
+                    <li><a href="#">VND</a></li>
+                    <li><a href="#">JPY</a></li>
+                    <li><a href="#">EUR</a></li>
+                    <li><a href="#">USD</a></li>
+                  </ul>
+                </li>
+                <li class="drop">
+                  <a href="">PORTUGUES </a>
+                  <i class="bx bxs-chevron down"></i>
+                  <ul class="drop-content">
+                    <li><a href="#">VIETINAMITA</a></li>
+                    <li><a href="#">JAPONES</a></li>
+                    <li><a href="#">FRANCES</a></li>
+                    <li><a href="#">ALEMÃO</a></li>
+                    <li><a href="#">INGLES</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">RASTREIO</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg-principal">
+            <div class="mid-header docker"><a href="#" class="logo">Ecommerce</a></div>
+            <div class="search">
+              <input type="text" placeholder="Busca">
+              <i class='bx bx-search-alt'></i>
+          </div>
+          <ul class="user-menu">
+              <li><a href="#"><i class='bx bx-bell'></i></a></li>
+              <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+              <li><a href="#"><i class='bx bx-cart'></i></a></li>
+          </ul>
       </div>
-     
-      <div class="header-wrapper" id="header-wrapper">
-          <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
-              <i class='bx bx-x'></i>
-          </span>
-          
-          <div class="bg-second">
-              <div class="top-header container">
-                  <ul class="devided">
-                      <li>
-                          <a href="#">+551140028922</a>
-                      </li>
-                      <li>
-                          <a href="#">ecommerce@mail.com</a>
-                      </li>
-                  </ul>
-                  <ul class="devided">
-                      <li class="dropdown">
-                          <a href="">USD</a>
-                          <i class='bx bxs-chevron-down'></i>
-                          <ul class="dropdown-content">
-                              <li><a href="#">VND</a></li>
-                              <li><a href="#">JPY</a></li>
-                              <li><a href="#">EUR</a></li>
-                          </ul>
-                      </li>
-                      <li class="dropdown">
-                          <a href="">PORTUGUES</a>
-                          <i class='bx bxs-chevron-down'></i>
-                          <ul class="dropdown-content">
-                              <li><a href="#">VIETNAMITA</a></li>
-                              <li><a href="#">JAPONES</a></li>
-                              <li><a href="#">FRANÇA</a></li>
-                              <li><a href="#">ESPANHOL</a></li>
-                          </ul>
-                      </li>
-                      <li><a href="#">RASTREAMENTO DE PEDIDOS</a></li>
-                  </ul>
-              </div>
-          </div>
-          
-          <div class="bg-main">
-              <div class="mid-header container">
-                  <a href="#" class="logo">ecommerce</a>
-                  <div class="search">
-                      <input type="text" placeholder="Search">
-                      <i class='bx bx-search-alt'></i>
-                  </div>
-                  <ul class="user-menu">
-                      <li><a href="#"><i class='bx bx-bell'></i></a></li>
-                      <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
-                      <li><a href="#"><i class='bx bx-cart'></i></a></li>
-                  </ul>
-              </div>
-          </div>
-          
-          <div class="bg-second">
-              <div class="bottom-header container">
-                  <ul class="main-menu">
-                      <li><a href="#">home</a></li>
-                      
-                      <li class="mega-dropdown">
-                          <a href="./products.html">Compre<i class='bx bxs-chevron-down'></i></a>
-                          <div class="mega-content">
-                              <div class="row">
-                                  <div class="col-3 col-md-12">
-                                      <div class="box">
-                                          <h3>Categorias</h3>
-                                          <ul>
-                                              <li><a href="#">Sem fio</a></li>
-                                              <li><a href="#">Fones de ouvido inear</a></li>
-                                              <li><a href="#">Headset</a></li>
-                                              <li><a href="#">fone de ouvido esportivo</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  <div class="col-3 col-md-12">
-                                      <div class="box">
-                                        <h3>Categorias</h3>
-                                        <ul>
-                                            <li><a href="#">Sem fio</a></li>
-                                            <li><a href="#">Fones de ouvido inear</a></li>
-                                            <li><a href="#">Headset</a></li>
-                                            <li><a href="#">fone de ouvido esportivo</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  <div class="col-3 col-md-12">
-                                      <div class="box">
-                                        <h3>Categorias</h3>
-                                        <ul>
-                                            <li><a href="#">Sem fio</a></li>
-                                            <li><a href="#">Fones de ouvido inear</a></li>
-                                            <li><a href="#">Headset</a></li>
-                                            <li><a href="#">fone de ouvido esportivo</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  <div class="col-3 col-md-12">
-                                      <div class="box">
-                                        <h3>Categorias</h3>
-                                        <ul>
-                                            <li><a href="#">Sem fio</a></li>
-                                            <li><a href="#">Fones de ouvido inear</a></li>
-                                            <li><a href="#">Headset</a></li>
-                                            <li><a href="#">fone de ouvido esportivo</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="row img-row">
-                                  <div class="col-3">
-                                      <div class="box">
-                                          <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
-                                      </div>
-                                  </div>
-                                  <div class="col-3">
-                                      <div class="box">
-                                          <img src="./images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png" alt="">
-                                      </div>
-                                  </div>
-                                  <div class="col-3">
-                                      <div class="box">
-                                          <img src="./images/JBL_JR 310BT_Product Image_Hero_Skyblue.png" alt="">
-                                      </div>
-                                  </div>
-                                  <div class="col-3">
-                                      <div class="box">
-                                          <img src="./images/JBLHorizon_001_dvHAMaster.png" alt="">
-                                      </div>
-                                  </div>
+  </div>
+ 
+  <div class="bg-second">
+      <div class="bottom-header container">
+          <ul class="main-menu">
+              <li><a href="#">Inicio</a></li>
+              <li class="mega-dropdown">
+                  <a href="./products.html">Loja<i class='bx bxs-chevron-down'></i></a>
+                  <div class="mega-content">
+                      <div class="row">
+                          <div class="col-3 col-md-12">
+                              <div class="box">
+                                  <h3>Categorias</h3>
+                                  <ul>
+                                    <li><a href="#">Sem fio</a></li>
+                                    <li><a href="#">fones sem fio</a></li>
+                                    <li><a href="#">Fone de ouvido protegido</a></li>
+                                    <li><a href="#">fone de ouvido esportivo</a></li>
+                                  </ul>
                               </div>
                           </div>
-                      </li>
-                      
-                      <li><a href="#">blog</a></li>
-                      <li><a href="#">contato</a></li>
-                  </ul>
+                          <div class="col-3 col-md-12">
+                              <div class="box">
+                                  <h3>Categorias</h3>
+                                  <ul>
+                                    <li><a href="#">Sem fio</a></li>
+                                    <li><a href="#">fones sem fio</a></li>
+                                    <li><a href="#">Fone de ouvido protegido</a></li>
+                                    <li><a href="#">fone de ouvido esportivo</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-3 col-md-12">
+                              <div class="box">
+                                  <h3>Categorias</h3>
+                                  <ul>
+                                    <li><a href="#">Sem fio</a></li>
+                                    <li><a href="#">fones sem fio</a></li>
+                                    <li><a href="#">Fone de ouvido protegido</a></li>
+                                    <li><a href="#">fone de ouvido esportivo</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-3 col-md-12">
+                              <div class="box">
+                                  <h3>Categorias</h3>
+                                  <ul>
+                                      <li><a href="#">Sem fio</a></li>
+                                      <li><a href="#">fones sem fio</a></li>
+                                      <li><a href="#">Fone de ouvido protegido</a></li>
+                                      <li><a href="#">fone de ouvido esportivo</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row img-row">
+                          <div class="col-3">
+                              <div class="box">
+                                  <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="box">
+                                  <img src="./images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png" alt="">
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="box">
+                                  <img src="./images/JBL_JR 310BT_Product Image_Hero_Skyblue.png" alt="">
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="box">
+                                  <img src="./images/JBLHorizon_001_dvHAMaster.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+      </li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">Contato</li>
+        </ul>
+        </div>
+        </div>
+        </div>
+    </header>
+    <div class="hero">
+      <div class="slider">
+          <div class="container">
+              
+              <div class="slide active">
+                  <div class="info">
+                      <div class="info-content">
+                          <h3 class="top-down">
+                              JBL TUNE 750TNC
+                          </h3>
+                          <h2 class="top-down trans-delay-0-2">
+                              Next-gen design
+                          </h2>
+                          <p class="top-down trans-delay-0-4">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor commodi dignissimos culpa, eaque eos necessitatibus possimus veniam, cupiditate rerum deleniti? Libero, ducimus error? Beatae velit dolore sint explicabo! Fugit.
+                          </p>
+                          <div class="top-down trans-delay-0-6">
+                              <button class="btn-flat btn-hover">
+                                  <span>Compre agora</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="img top-down">
+                      <img src="" alt="">
+                  </div>
               </div>
+              
+              <div class="slide">
+                  <div class="info">
+                      <div class="info-content">
+                          <h3 class="top-down">
+                              JBL Quantum ONE
+                          </h3>
+                          <h2 class="top-down trans-delay-0-2">
+                              Ipsum dolor
+                          </h2>
+                          <p class="top-down trans-delay-0-4">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio, voluptatum aperiam nobis quis maxime corporis porro alias soluta sunt quae consectetur aliquid blanditiis perspiciatis labore cumque, ullam, quam eligendi!
+                          </p>
+                          <div class="top-down trans-delay-0-6">
+                              <button class="btn-flat btn-hover">
+                                  <span>Compre agora</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="img right-left">
+                      <img src="" alt="">
+                  </div>
+              </div>
+              
+              <div class="slide">
+                  <div class="info">
+                      <div class="info-content">
+                          <h3 class="top-down">
+                              JBL JR 310BT
+                          </h3>
+                          <h2 class="top-down trans-delay-0-2">
+                              Consectetur Elit
+                          </h2>
+                          <p class="top-down trans-delay-0-4">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo aut fugiat, libero magnam nemo inventore in tempora beatae officiis temporibus odit deserunt molestiae amet quam, asperiores, iure recusandae nulla labore!
+                          </p>
+                          <div class="top-down trans-delay-0-6">
+                              <button class="btn-flat btn-hover">
+                                  <span>Compre agora</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="img left-right">
+                      <img src="" alt="">
+                  </div>
+              </div>
+             
           </div>
           
+          <button class="slide-controll slide-next">
+              <i class='bx bxs-chevron-right'></i>
+          </button>
+          <button class="slide-controll slide-prev">
+              <i class='bx bxs-chevron-left'></i>
+          </button>
       </div>
-      
-  </header>
-  
-  <div class="bg-main">
+  </div>
+
+  <div class="promotion">
+      <div class="row">
+          <div class="col-4 col-md-12 col-sm-12">
+              <div class="promotion-box">
+                  <div class="text">
+                      <h3>Fones & Fones sem fio</h3>
+                      <button class="btn-flat btn-hover"><span>Coleção da loja</span></button>
+                  </div>
+                  <img src="" alt="">
+              </div>
+          </div>
+          <div class="col-4 col-md-12 col-sm-12">
+              <div class="promotion-box">
+                  <div class="text">
+                      <h3>Série Quântica JBL</h3>
+                      <button class="btn-flat btn-hover"><span>Coleção da loja</span></button>
+                  </div>
+                  <img src="" alt="">
+              </div>
+          </div>
+          <div class="col-4 col-md-12 col-sm-12">
+              <div class="promotion-box">
+                  <div class="text">
+                      <h3>Fones de ouvido sem fio verdadeiros</h3>
+                      <button class="btn-flat btn-hover"><span>Coleção da loja</span></button>
+                  </div>
+                  <img src="" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="section">
       <div class="container">
-          <div class="box">
-              <div class="breadcumb">
-                  <a href="./index.html">home</a>
-                  <span><i class='bx bxs-chevrons-right'></i></span>
-                  <a href="./products.html">Todos os produtos</a>
-                  <span><i class='bx bxs-chevrons-right'></i></span>
-                  <a href="./product-detail.html">JBL Tune 750TNC</a>
-              </div>
+          <div class="section-header">
+              <h2>Produto mais recente</h2>
           </div>
-          <div class="row product-row">
-              <div class="col-5 col-md-12">
-                  <div class="product-img" id="product-img">
-                      <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
-                  </div>
-                  <div class="box">
-                      <div class="product-img-list">
-                          <div class="product-img-item">
-                              <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
+          <div class="row" id="latest-products">
+              <div class="col-3 col-md-6 col-sm-12">
+                  <div class="product-card">
+                      <div class="product-card-img">
+                          <img src="" alt="">
+                          <img src="" alt="">
+                      </div>
+                      <div class="product-card-info">
+                          <div class="product-btn">
+                              <button class="btn-flat btn-hover btn-shop-now">Compre agora</button>
+                              <button class="btn-flat btn-hover btn-cart-add">
+                                  <i class='bx bxs-cart-add'></i>
+                              </button>
+                              <button class="btn-flat btn-hover btn-cart-add">
+                                  <i class='bx bxs-heart'></i>
+                              </button>
                           </div>
-                          <div class="product-img-item">
-                              <img src="./images/JBL-Endurance-Sprint_Alt_Red-1605x1605px.webp" alt="">
+                          <div class="product-card-name">
+                              JBL Quantum 400
                           </div>
-                          <div class="product-img-item">
-                              <img src="./images/JBL_Quantum_400_Product Image_Hero 02.png" alt="">
+                          <div class="product-card-price">
+                              <span><del>$300</del></span>
+                              <span class="curr-price">$200</span>
                           </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-7 col-md-12">
-                  <div class="product-info">
-                      <h1>
-                          JBL TUNE 750TNC
-                      </h1>
-                      <div class="product-info-detail">
-                          <span class="product-info-detail-title">Marca:</span>
-                          <a href="#">JBL</a>
-                      </div>
-                      <div class="product-info-detail">
-                          <span class="product-info-detail-title">Avaliado:</span>
-                          <span class="rating">
-                              <i class='bx bxs-star'></i>
-                              <i class='bx bxs-star'></i>
-                              <i class='bx bxs-star'></i>
-                              <i class='bx bxs-star'></i>
-                              <i class='bx bxs-star'></i>
-                          </span>
-                      </div>
-                      <p class="product-description">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo libero alias officiis dolore doloremque eveniet culpa dignissimos, itaque, cum animi excepturi sed veritatis asperiores soluta, nisi atque quae illum. Ipsum.
-                      </p>
-                      <div class="product-info-price">$2345</div>
-                      <div class="product-quantity-wrapper">
-                          <span class="product-quantity-btn">
-                              <i class='bx bx-minus'></i>
-                          </span>
-                          <span class="product-quantity">1</span>
-                          <span class="product-quantity-btn">
-                              <i class='bx bx-plus'></i>
-                          </span>
-                      </div>
-                      <div>
-                          <button class="btn-flat btn-hover">adicionar ao carrinho</button>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="box">
-              <div class="box-header">
-                  descrição
+          <div class="section-footer">
+              <a href="./products.html" class="btn-flat btn-hover">ver tudo</a>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="bg-second">
+      <div class="section container">
+          <div class="row">
+              <div class="col-4 col-md-4">
+                  <div class="sp-item-img">
+                      <img src="" alt="">
+                  </div>
               </div>
-              <div class="product-detail-description">
-                  <button class="btn-flat btn-hover btn-view-description" id="view-all-description">
-                      ver tudo
-                  </button>
-                  <div class="product-detail-description-content">
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium obcaecati odit dolorem, doloremque accusamus esse neque ipsa dignissimos saepe quisquam tempore perferendis deserunt sapiente! Recusandae illum totam earum ratione.
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam incidunt maxime rerum reprehenderit voluptas asperiores ipsam quas consequuntur maiores, at odit obcaecati vero sunt! Reiciendis aperiam perferendis consequuntur odio quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat eum veniam doloremque nihil repudiandae odio ratione culpa libero tempora. Expedita, quo molestias. Minus illo quis dignissimos aliquid sapiente error!
+              <div class="col-7 col-md-8">
+                  <div class="sp-item-info">
+                      <div class="sp-item-name">JBL TUNE 750TNC</div>
+                      <p class="sp-item-description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dignissimos itaque et eaque quod harum vero autem? Reprehenderit enim non voluptate! Qui provident modi est non eius ratione, debitis iure.
                       </p>
-                      <img src="./images/JBL_Quantum_400_Product Image_Hero 02.png" alt="">
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusantium officia, quae fuga in exercitationem aliquam labore ex doloribus repellendus beatae facilis ipsam. Veritatis vero obcaecati iste atque aspernatur ducimus.
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat quam praesentium id sit amet magnam ad, dolorum, cumque iste optio itaque expedita eius similique, ab adipisci dicta. Quod, quibusdam quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, in corrupti ipsam sint error possimus commodi incidunt suscipit sit voluptatum quibusdam enim eligendi animi deserunt recusandae earum natus voluptas blanditiis?
-                      </p>
-                      <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
-                      <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ullam quam fugit veniam ipsum recusandae incidunt, ex ratione, magnam labore ad tenetur officia! In, totam. Molestias sapiente deserunt animi porro?
-                      </p>
+                      <button class="btn-flat btn-hover">Compre agora</button>
                   </div>
               </div>
           </div>
-          <div class="box">
-              <div class="box-header">
-                  Revisão
-              </div>
-              <div>
-                  <div class="user-rate">
-                      <div class="user-info">
-                          <div class="user-avt">
-                              <img src="./images/tuat.jpg" alt="">
-                          </div>
-                          <div class="user-name">
-                              <span class="name"></span>
-                              <span class="rating">
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                              </span>
-                          </div>
+      </div>
+  </div>
+ 
+  <div class="section">
+      <div class="container">
+          <div class="section-header">
+              <h2>Mais vendidos</h2>
+          </div>
+          <div class="row" id="best-products">
+              <div class="col-3 col-md-6 col-sm-12">
+                  <div class="product-card">
+                      <div class="product-card-img">
+                          <img src="" alt="">
+                          <img src="" alt="">
                       </div>
-                      <div class="user-rate-content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus voluptas vero? Aspernatur!
-                      </div>
-                  </div>
-                  <div class="user-rate">
-                      <div class="user-info">
-                          <div class="user-avt">
-                              <img src="./images/tuat.jpg" alt="">
+                      <div class="product-card-info">
+                          <div class="product-btn">
+                              <button class="btn-flat btn-hover btn-shop-now">Compre agora</button>
+                              <button class="btn-flat btn-hover btn-cart-add">
+                                  <i class='bx bxs-cart-add'></i>
+                              </button>
+                              <button class="btn-flat btn-hover btn-cart-add">
+                                  <i class='bx bxs-heart'></i>
+                              </button>
                           </div>
-                          <div class="user-name">
-                              <span class="name"></span>
-                              <span class="rating">
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                              </span>
+                          <div class="product-card-name">
+                              JBL Quantum 400
+                          </div>
+                          <div class="product-card-price">
+                              <span><del>$300</del></span>
+                              <span class="curr-price">$200</span>
                           </div>
                       </div>
-                      <div class="user-rate-content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus voluptas vero? Aspernatur!
-                      </div>
-                  </div>
-                  <div class="user-rate">
-                      <div class="user-info">
-                          <div class="user-avt">
-                              <img src="./images/tuat.jpg" alt="">
-                          </div>
-                          <div class="user-name">
-                              <span class="name"></span>
-                              <span class="rating">
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="user-rate-content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus voluptas vero? Aspernatur!
-                      </div>
-                  </div>
-                  <div class="user-rate">
-                      <div class="user-info">
-                          <div class="user-avt">
-                              <img src="./images/tuat.jpg" alt="">
-                          </div>
-                          <div class="user-name">
-                              <span class="name"></span>
-                              <span class="rating">
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="user-rate-content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus voluptas vero? Aspernatur!
-                      </div>
-                  </div>
-                  <div class="user-rate">
-                      <div class="user-info">
-                          <div class="user-avt">
-                              <img src="./images/tuat.jpg" alt="">
-                          </div>
-                          <div class="user-name">
-                              <span class="name"></span>
-                              <span class="rating">
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                                  <i class='bx bxs-star'></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="user-rate-content">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea iste, veritatis nobis amet illum, cum alias magni dolores odio, eius quo excepturi veniam ipsa voluptatibus natus voluptas vero? Aspernatur!
-                      </div>
-                  </div>
-                  <div class="box">
-                      <ul class="pagination">
-                          <li><a href="#"><i class='bx bxs-chevron-left'></i></a></li>
-                          <li><a href="#" class="active">1</a></li>
-                          <li><a href="#">2</a></li>
-                          <li><a href="#">3</a></li>
-                          <li><a href="#">4</a></li>
-                          <li><a href="#">5</a></li>
-                          <li><a href="#"><i class='bx bxs-chevron-right'></i></a></li>
-                      </ul>
                   </div>
               </div>
           </div>
-          <div class="box">
-              <div class="box-header">
-                produtos relacionados
-              </div>
-              <div class="row" id="related-products"></div>
+          <div class="section-footer">
+              <a href="./products.html" class="btn-flat btn-hover">ver mais</a>
           </div>
       </div>
   </div>
   
+  <div class="section">
+      <div class="container">
+          <div class="section-header">
+              <h2>blog mais recente</h2>
+          </div>
+          <div class="blog">
+              <div class="blog-img">
+                  <img src="" alt="">
+              </div>
+              <div class="blog-info">
+                  <div class="blog-title">
+                      Lorem ipsum dolor sit amet
+                  </div>
+                  <div class="blog-preview">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.
+                  </div>
+                  <button class="btn-flat btn-hover">Ler mais</button>
+              </div>
+          </div>
+          <div class="blog row-revere">
+              <div class="blog-img">
+                  <img src="" alt="">
+              </div>
+              <div class="blog-info">
+                  <div class="blog-title">
+                      Lorem ipsum dolor sit amet
+                  </div>
+                  <div class="blog-preview">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.
+                  </div>
+                  <button class="btn-flat btn-hover">ler mais</button>
+              </div>
+          </div>
+          <div class="section-footer">
+              <a href="#" class="btn-flat btn-hover">ver tudo</a>
+          </div>
+      </div>
+  </div>
+ 
   <footer class="bg-second">
       <div class="container">
           <div class="row">
               <div class="col-3 col-md-6">
                   <h3 class="footer-head">Produtos</h3>
                   <ul class="menu">
-                      <li><a href="#">Centro de ajuda</a></li>
-                      <li><a href="#">entre em contato</a></li>
+                      <li><a href="#">Centro ajuda</a></li>
+                      <li><a href="#">Entre em contato</a></li>
                       <li><a href="#">ajuda do produto</a></li>
-                      <li><a href="#">garantia</a></li>
+                      <li><a href="#">Garantia</a></li>
                       <li><a href="#">status de pedido</a></li>
                   </ul>
               </div>
               <div class="col-3 col-md-6">
                   <h3 class="footer-head">serviços</h3>
                   <ul class="menu">
-                    <li><a href="#">Centro de ajuda</a></li>
-                    <li><a href="#">entre em contato</a></li>
-                    <li><a href="#">ajuda do produto</a></li>
-                    <li><a href="#">garantia</a></li>
-                    <li><a href="#">status de pedido</a></li>
+                    <li><a href="#">Centro ajuda</a></li>
+                      <li><a href="#">Entre em contato</a></li>
+                      <li><a href="#">ajuda do produto</a></li>
+                      <li><a href="#">Garantia</a></li>
+                      <li><a href="#">status de pedido</a></li>
                   </ul>
               </div>
               <div class="col-3 col-md-6">
-                  <h3 class="footer-head">suporte</h3>
+                  <h3 class="footer-head">Apoio</h3>
                   <ul class="menu">
-                    <li><a href="#">Centro de ajuda</a></li>
-                    <li><a href="#">entre em contato</a></li>
-                    <li><a href="#">ajuda do produto</a></li>
-                    <li><a href="#">garantia</a></li>
-                    <li><a href="#">status de pedido</a></li>
+                    <li><a href="#">Centro ajuda</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                    <li><a href="#">Ajuda do produto</a></li>
+                    <li><a href="#">Garantia</a></li>
+                    <li><a href="#">Status de pedido</a></li>
                   </ul>
               </div>
               <div class="col-3 col-md-6 col-sm-12">
@@ -441,17 +478,17 @@
                       </ul>
                   </div>
                   <div class="subscribe">
-                      <input type="email" placeholder="ENTER YOUR EMAIL">
+                      <input type="email" placeholder="Digite seu E-MAIL">
                       <button>inscrever-se</button>
                   </div>
               </div>
           </div>
       </div>
   </footer>
- 
+  
   <script src="./js/app.js"></script>
-  <script src="./js/product-detail.js"></script>
+  <script src="./js/index.js"></script>
+
 
   </body>
 </html>
-
