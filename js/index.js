@@ -42,8 +42,8 @@ showSlide()
 let products = [
     {
         name: 'JBL E55BT KEY BLACK',
-        image1: './images/JBL_E55BT_KEY_BLACK_6175_FS_x1-1605x1605px.png',
-        image2: './images/JBL_LIVE650BTNC_Product Image_Folded_Black.webp',
+        image1: '/imagens/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.png',
+        image2: '/imagens/JBL_LIVE650BTNC_Product-Image_Hero_Black_071_x1-1605x1605px.png',
         old_price: '400',
         curr_price: '300'
     },
