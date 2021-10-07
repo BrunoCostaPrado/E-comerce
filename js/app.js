@@ -1,8 +1,8 @@
-document.querySelectorAll('.dropdown > a').forEach(e => {
+document.querySelectorAll('.drop > a').forEach(e => {
     e.addEventListener('click', (event) => event.preventDefault())
 })
 
-document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+document.querySelectorAll('.mega-drop > a').forEach(e => {
     e.addEventListener('click', (event) => event.preventDefault())
 })
 
