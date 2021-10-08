@@ -527,7 +527,7 @@ ul.dividido > li:last-child {
   position: relative;
 }
 
-.produto-card-name {
+.produto-card-nome {
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -574,7 +574,7 @@ ul.dividido > li:last-child {
   line-height: 17px;
 }
 
-.sp-item-name {
+.sp-item-nome {
   font-size: 55px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -622,24 +622,24 @@ footer ul li {
   margin-bottom: 10px;
 }
 
-.contact-header {
+.contato-header {
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
   font-size: 38px;
 }
 
-.contact-socials {
+.contato-socials {
   display: flex;
   justify-content: center;
 }
 
-.contact-socials a {
+.contato-socials a {
   font-size: 30px;
   margin: 0 10px;
 }
 
-.contact-socials a:hover {
+.contato-socials a:hover {
   color: var(--grey);
 }
 
@@ -931,7 +931,7 @@ produto-img-list {
   overflow: hidden;
 }
 
-.user-name {
+.user-nome {
   margin-left: 20px;
   display: flex;
   align-items: stretch;
@@ -939,7 +939,7 @@ produto-img-list {
   justify-content: space-between;
 }
 
-.name {
+.nome {
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 10px;
