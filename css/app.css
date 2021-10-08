@@ -622,24 +622,24 @@ footer ul li {
   margin-bottom: 10px;
 }
 
-.contact-header {
+.contato-header {
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
   font-size: 38px;
 }
 
-.contact-socials {
+.contato-socials {
   display: flex;
   justify-content: center;
 }
 
-.contact-socials a {
+.contato-socials a {
   font-size: 30px;
   margin: 0 10px;
 }
 
-.contact-socials a:hover {
+.contato-socials a:hover {
   color: var(--grey);
 }
 
