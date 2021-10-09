@@ -1,66 +1,62 @@
-let produtos = [
+let products = [
     {
-      name: "JBL E55BT KEY BLACK",
-      image1: "/imagens/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.png",
-      image2:
-        "/imagens/JBL_LIVE650BTNC_Product-Image_Hero_Black_071_x1-1605x1605px.png",
-      old_price: "400",
-      curr_price: "300",
+        name: 'JBL E55BT KEY BLACK',
+        imagem1: './imagens/JBL_E55BT_KEY_BLACK_6175_FS_x1-1605x1605px.png',
+        imagem2: './imagens/JBL_LIVE650BTNC_Product Image_Folded_Black.webp',
+        old_price: '400',
+        curr_price: '300'
     },
     {
-      name: "JBL JR 310BT",
-      image1: "./imagens/JBL_JR 310BT_Product Image_Hero_Skyblue.png",
-      image2: "./imagens/JBL_JR 310BT_Product Image_Detail_Skyblue.png",
-      old_price: "400",
-      curr_price: "300",
+        name: 'JBL JR 310BT',
+        imagem1: './imagens/JBL_JR 310BT_Product Image_Hero_Skyblue.png',
+        imagem2: './imagens/JBL_JR 310BT_Product Image_Detail_Skyblue.png',
+        old_price: '400',
+        curr_price: '300'
     },
     {
-      name: "JBL TUNE 750BTNC",
-      image1:
-        "./imagens/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png",
-      image2: "./imagens/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.png",
-      old_price: "400",
-      curr_price: "300",
+        name: 'JBL TUNE 750BTNC',
+        imagem1: './imagens/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png',
+        imagem2: './imagens/JBL_E55BT_KEY_RED_6063_FS_x1-1605x1605px.webp',
+        old_price: '400',
+        curr_price: '300'
     },
     {
-      name: "JBL Horizon",
-      image1: "./imagens/JBLHorizon_001_dvHAMaster.jpg",
-      old_price: "400",
-      curr_price: "300",
+        name: 'JBL Horizon',
+        imagem1: './imagens/JBLHorizon_001_dvHAMaster.png',
+        imagem2: './imagens/JBLHorizon_BLK_002_dvHAMaster.webp',
+        old_price: '400',
+        curr_price: '300'
     },
     {
-      name: "JBL Tune 220TWS",
-      image1: "./imagens/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png",
-      image2: "./imagens/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.jpg",
-      old_price: "400",
-      curr_price: "300",
+        name: 'JBL Tune 220TWS',
+        imagem1: './imagens/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png',
+        imagem2: './imagens/JBL_TUNE220TWS_ProductImage_Pink_Back.png',
+        old_price: '400',
+        curr_price: '300'
     },
     {
-      name: "JBL Endurance SPRINT",
-      image1:
-        "./imagens/JBL_Endurance-SPRINT_Product-Image_Black_Lime_Front-1605x1605px.png",
-      image2:
-        "./imagens/JBL_Endurance-SPRINT_Product-Image_Red_front-1605x1605px.png",
-      old_price: "400",
-      curr_price: "300",
+        name: 'UA Project Rock',
+        imagem1: './imagens/190402_E1_FW19_EarbudsWCase_S13_0033-1_1605x1605_HERO.png',
+        imagem2: './imagens/190402_E1_FW19_EarbudsWCase_S13_0033-1_1605x1605_BACK.png',
+        old_price: '400',
+        curr_price: '300'
     },
-  ];
-  
+]
 
-let produto_list = document.querySelector('#produtos')
+let product_list = document.querySelector('#products')
 
-renderprodutos = (produtos) => {
-    produtos.forEach(e => {
+renderProducts = (products) => {
+    products.forEach(e => {
         let prod = `
             <div class="col-4 col-md-6 col-sm-12">
-                <div class="produto-card">
-                    <div class="produto-card-img">
-                        <img src="${e.image1}" alt="">
-                        <img src="${e.image2}" alt="">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="${e.imagem1}" alt="">
+                        <img src="${e.imagem2}" alt="">
                     </div>
-                    <div class="produto-card-info">
-                        <div class="produto-btn">
-                            <a href="./produto-detail.html" class="btn-flat btn-hover btn-shop-now">shop now</a>
+                    <div class="product-card-info">
+                        <div class="product-btn">
+                            <a href="./produtos-detalhes.html" class="btn-flat btn-hover btn-shop-now">Comprar</a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-cart-add'></i>
                             </button>
@@ -68,10 +64,10 @@ renderprodutos = (produtos) => {
                                 <i class='bx bxs-heart'></i>
                             </button>
                         </div>
-                        <div class="produto-card-name">
+                        <div class="product-card-name">
                             ${e.name}
                         </div>
-                        <div class="produto-card-price">
+                        <div class="product-card-price">
                             <span><del>${e.old_price}</del></span>
                             <span class="curr-price">${e.curr_price}</span>
                         </div>
@@ -79,15 +75,15 @@ renderprodutos = (produtos) => {
                 </div>
             </div>
         `
-        produto_list.insertAdjacentHTML("beforeend", prod)
+        product_list.insertAdjacentHTML("beforeend", prod)
     })
 }
 
-renderprodutos(produtos)
-renderprodutos(produtos)
+renderProducts(products)
+renderProducts(products)
 
 let filter_col = document.querySelector('#filter-col')
 
-document.querySelector('#filter-toggle').addEventListener('click', () => filter_col.classList.toggle('active'))
+document.querySelector('#filter-alt').addEventListener('click', () => filter_col.classList.toggle('active'))
 
 document.querySelector('#filter-close').addEventListener('click', () => filter_col.classList.toggle('active'))
