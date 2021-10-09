@@ -1,13 +1,13 @@
-.coll {
+.row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
-.coll-revere {
-  padding: 0 15px;
-  margin-bottom: 20px;
+
+.row-revere {
   flex-direction: row-reverse;
 }
+
 [class*="col-"] {
   padding: 0 15px;
   margin-bottom: 20px;
@@ -60,6 +60,8 @@
 .col-12 {
   width: 100%;
 }
+
+
 @media only screen and (max-width: 1280px) {
   .col-md-1 {
     width: 8.33%;
@@ -109,6 +111,8 @@
     width: 100%;
   }
 }
+
+
 @media only screen and (max-width: 750px) {
   .col-sm-1 {
     width: 8.33%;

@@ -91,16 +91,15 @@ img {
     font-size: 13px;
 }
 
-ul.devided > li {
+ul.dividido > li {
     margin-right: 10px;
     padding-right: 10px;
     border-right: 1px solid;
 }
 
-ul.devided > li:last-child {
+ul.dividido > li:last-child {
     border-right: none;
 }
-
 
 .drop {
     position: relative;
@@ -114,6 +113,7 @@ ul.devided > li:last-child {
 }
 
 .drop-content {
+    /* display: flex; */
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -132,6 +132,7 @@ ul.devided > li:last-child {
 .drop-content > li:hover {
     color: var(--red);
 }
+/* end drop */
 
 .mid-header {
     display: flex;
@@ -215,6 +216,7 @@ ul.devided > li:last-child {
     border-bottom: 2px solid var(--red);
 }
 
+/* mega menu */
 
 .mega-content {
     opacity: 0;
@@ -266,6 +268,7 @@ ul.devided > li:last-child {
     border-bottom: 2px solid var(--red);
 }
 
+/* end mega menu */
 
 .box {
     padding: 20px;
@@ -382,6 +385,7 @@ ul.devided > li:last-child {
     left: 50px;
 }
 
+/* slide animation */
 .top-down {
     transform: translateY(-100%);
     opacity: 0;
@@ -420,6 +424,7 @@ ul.devided > li:last-child {
     opacity: 1;
     visibility: visible;
 }
+/* end slide animation */
 
 .trans-delay-0-2 {
     transition-delay: 0.2s;
@@ -436,39 +441,39 @@ ul.devided > li:last-child {
     transition-delay: 0.8s;
 }
 
-.promocao {
+.promotion {
     padding: 15px;
 }
 
-.promocao [class*="col-"] {
+.promotion [class*="col-"] {
     padding: 15px;
 }
 
-.promocao-box {
+.promotion-box {
     display: flex;
     background-color: var(--third-bg-color);
     position: relative;
 }
 
-.promocao-box .text {
+.promotion-box .text {
     flex-grow: 1;
     padding: 20px;
 }
 
-.promocao-box .text h3 {
+.promotion-box .text h3 {
     font-size: 25px;
 }
 
-.promocao-box .text button {
+.promotion-box .text button {
     margin-top: 30px;
 }
 
-.promocao-box img {
+.promotion-box img {
     width: 150px;
     transition: transform 0.3s ease-in-out;
 }
 
-.promocao-box:hover img {
+.promotion-box:hover img {
     transform: scale(1.1);
 }
 
@@ -952,6 +957,7 @@ footer ul li {
     line-height: 25px;
 }
 
+/* responsive */
 
 @media only screen and (max-width: 1280px) {
     .mobile-menu {
@@ -1160,11 +1166,11 @@ footer ul li {
         font-size: 40px;
     }
 
-    .promocao {
+    .promotion {
         padding-top: 45px;
     }
 
-    .promocao-box {
+    .promotion-box {
         height: unset;
     }
 }
